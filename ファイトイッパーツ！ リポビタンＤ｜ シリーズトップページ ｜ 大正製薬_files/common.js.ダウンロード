@@ -1,0 +1,111 @@
+$(function(){
+  function RestrictionList(){
+    //分割したい個数を入力
+    var division = 6;
+    //要素の数を数える
+    var bnrlength = $('.campaign-bnr-box li').length;
+    //分割数で割る
+    var divideresult = bnrlength / division;
+    //分割数 刻みで後ろにmorelinkを追加する
+    for(var i=1;i<divideresult;i++){
+      $('.campaign-bnr-box li').eq(division*i-1).after('<div class="morelink link'+i+'">もっと見る</div>');
+    }
+    //最初のli（分割数）と、morelinkを残して他を非表示
+    $('.campaign-bnr-box li,.morelink').hide();
+    for(var j=0;j<division;j++){
+      $('.campaign-bnr-box li').eq(j).show();
+    }
+    $('.morelink.link1').show();
+    //morelinkにクリック時の動作
+    $('.morelink').click(function(){
+      //何個目のmorelinkがクリックされたかをカウント
+      var index = $(this).index('.morelink');
+      //(クリックされたindex +2) * 分割数 = 表示数
+      for(var k=0;k<(index+2)*division;k++){
+        $('.campaign-bnr-box li').eq(k).fadeIn();
+      }
+      //一旦全てのmorelink削除
+      $('.morelink').hide();
+      //次のmorelink(index+1)を表示
+      $('.morelink').eq(index+1).show();
+    });
+  }
+  
+  // もっと見る
+  $(document).ready(function(){
+    if(window.matchMedia("screen and (max-width:598px)").matches){
+      RestrictionList();
+    }else if(window.matchMedia("screen and (mix-width:599px)").matches){
+      $('.campaign-bnr-box li').css('display', 'block');
+    }else{
+      RestrictionList();
+    }
+  });
+});
+
+ $(function () {
+   "use strict";
+   //リポビタンfeel
+   if ($('.lipo_feel_cms .slider').length) {
+     $('.lipo_feel_cms .slider').slick({
+       autoplaySpeed: 3000,
+       autoplay: true,
+       slidesToShow: 3,
+       slidesToScro: 1,
+       arrows: true,
+       prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+       nextArrow: '<div class="slide-arrow next-arrow"></div>',
+       responsive: [ //レスポンシブの設定
+         {
+           breakpoint: 640, //ブレークポイント1の値
+           settings: { //ブレークポイント1のオプション
+             slidesToShow: 2,
+             slidesToScro: 1,
+             arrows: true,
+             prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+             nextArrow: '<div class="slide-arrow next-arrow"></div>',
+           }
+         }
+       ]
+     });
+   }
+   //リポビタンfine
+   if ($('.lipo_fine_cms .slider').length) {
+     $('.lipo_fine_cms .slider').slick({
+       autoplaySpeed: 3000,
+       autoplay: true,
+       slidesToShow: 2,
+       slidesToScro: 1,
+       arrows: true,
+       prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+       nextArrow: '<div class="slide-arrow next-arrow"></div>',
+       responsive: [ //レスポンシブの設定
+         {
+           breakpoint: 640, //ブレークポイント1の値
+           settings: { //ブレークポイント1のオプション
+             slidesToShow: 1,
+             slidesToScro: 1,
+             dots: true,
+             arrows: true,
+             prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+             nextArrow: '<div class="slide-arrow next-arrow"></div>',
+           }
+         }
+       ]
+     });
+   }
+   //リポビタンjelly
+   if ($('.lipo_jelly_cms .slider').length) {
+      $('.lipo_jelly_cms .slider').slick({
+       autoplaySpeed: 3000,
+       autoplay: true,
+       slidesToShow: 3,
+       responsive: [{
+         breakpoint: 779,
+         settings: {
+           slidesToShow: 1,
+         }
+       }]
+     });
+   }
+ });

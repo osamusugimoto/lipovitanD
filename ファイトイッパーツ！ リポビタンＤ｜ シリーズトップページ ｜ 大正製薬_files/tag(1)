@@ -1,0 +1,11 @@
+BrightTag.site('F2bTiYV',function(s){
+s.script('//s.yjtag.jp/lib/02e57a1ed55fd0605cfdf52bb203ee30d706cc8e.js?v\x3d2').wait(function(){
+s.domready(function(){
+s.dbe('yj_device', '(function(){ var device \x3d BrightTag.device(); if (device \x3d\x3d \x22desktop\x22) { return \x22PC\x22; } else if (device \x3d\x3d \x22mobile\x22) { return \x22SP\x22; } else if (device \x3d\x3d \x22tablet\x22) { return \x22TAB\x22; } else { return \x22OTHER\x22; } })();',{pageId:3255518});
+s.dbe('yj_referrer', 'document.referrer',{pageId:3255518});
+s.dbe('yj_pv_time', '(new Date).getTime()',{pageId:3255518});
+s.dbe('yj_url', 'document.URL',{pageId:3255518});
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n        (function(){\n          var url \x3d new BrightTag.HTTP.URL(\x27https://b0.yahoo.co.jp/b\x27)\n            .appendParam(\x22_a\x22, "2190".replace(/^\\s+|\\s+$/g, \x27\x27))\n            .appendParam(\x22_d\x22, "0002".replace(/^\\s+|\\s+$/g, \x27\x27))\n            .appendParam(\x22_r\x22, 599348548);\n          BrightTag.each([{key:"url",value:'+s.dataref("yj_url")+'},{key:"referrer",value:'+s.dataref("yj_referrer")+'},{key:"device",value:'+s.dataref("yj_device")+'},{key:"pv_time",value:'+s.dataref("yj_pv_time")+'},{key:"device_url",value:":"+'+s.dataref("yj_device")+'+":"+'+s.dataref("yj_url")+'+":"}], function(param) {\n            url.appendParam(param.key, param.value);\n          });\n          url.appendParam(\x22_s\x22, url.toString().match(/.+\\?(.*)/)[1].length.toString(16));\n          BrightTag.Content.image(url);\n        })();\n      \x3c/script\x3e',{tagId:4558775});
+});
+});
+});

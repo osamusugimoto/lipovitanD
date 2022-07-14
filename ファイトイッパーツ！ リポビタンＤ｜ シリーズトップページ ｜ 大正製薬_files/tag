@@ -1,0 +1,19 @@
+BrightTag.site('E2cW0lB',function(s){
+s.script('//s.yjtag.jp/lib/6b2dec985940aa46d1c1303a24396ed148d3fbc7.js?v\x3d2').script('https://s.yimg.jp/images/listing/tool/cv/ytag.js').wait(function(){
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n          yjDataLayer \x3d window.yjDataLayer || [];\n\n          function ytag() {\n            yjDataLayer.push(arguments);\n          }\n\n          ytag({\x22type\x22:\x22ycl_cookie\x22, \x22config\x22:{\x22ycl_use_non_cookie_storage\x22:true}});\n      \x3c/script\x3e',{tagId:-4});
+s.domready(function(){
+s.dbe('yj_referrer', 'document.referrer',{pageId:3400684});
+s.dbe('yj_member_id', '(function(){ try{ return FFID; }catch(e){ return \x22\x22; } return \x22\x22;})();',{pageId:3400684});
+s.dbe('yj_pv_time', '(new Date).getTime()',{pageId:3400684});
+s.dbe('yj_device', '(function(){var device \x3d BrightTag.device();if (device \x3d\x3d \x22mobile\x22) {return \x22SP\x22;}return \x22PC\x22;})();',{pageId:3400684});
+s.dbe('yj_url', 'document.URL',{pageId:3400684});
+s.tag('\x3cimg src \x3d\x22https://b95.yahoo.co.jp/s?s\x3dbt\x26csurl\x3dhttps://yjtag.yahoo.co.jp/cs\x26tp\x3d8FzrfRY\x26btt\x3dvu3Bbog7kx0pOOvAyNmx7fPQKEH-83tiLsMZ-uThE0A\x22 style\x3d\x22display:none;\x22 /\x3e',{tagId:5927370});
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n  var fringe81tag \x3d fringe81tag || {};\n  fringe81tag.rtgTag \x3d fringe81tag.rtgTag || [];\n  fringe81tag.rtgTag.push({\n  clientId: \x27Pe8bHkPQ9.BM\x27\n});\n  (function () {\n  var protocol \x3d (\x22https:\x22 \x3d\x3d location.protocol) ? \x22https:\x22 : \x22http:\x22,\n  entry \x3d document.getElementsByTagName(\x27script\x27)[0],\n  script \x3d document.createElement(\x27script\x27);\n  script.src \x3d protocol + \x27//cdn.adnwif.smt.docomo.ne.jp/scripts/retargeting/retargeting.js\x27 + \x27?\x27 + (+new Date()+\x22\x22).slice(0,-8);\n  script.type \x3d \x27text/javascript\x27;\n  entry.parentNode.insertBefore(script, entry);\n}());\n\x3c/script\x3e',{tagId:7161680});
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n        (function(){\n          var url \x3d new BrightTag.HTTP.URL(\x27https://b0.yahoo.co.jp/b\x27)\n            .appendParam(\x22_a\x22, "2190".replace(/^\\s+|\\s+$/g, \x27\x27))\n            .appendParam(\x22_d\x22, "0002".replace(/^\\s+|\\s+$/g, \x27\x27))\n            .appendParam(\x22_r\x22, 501550755);\n          BrightTag.each([{key:"url",value:'+s.dataref("yj_url")+'},{key:"referrer",value:'+s.dataref("yj_referrer")+'},{key:"device",value:'+s.dataref("yj_device")+'},{key:"pv_time",value:'+s.dataref("yj_pv_time")+'},{key:"device_url",value:":"+'+s.dataref("yj_device")+'+":"+'+s.dataref("yj_url")+'+":"}], function(param) {\n            url.appendParam(param.key, param.value);\n          });\n          url.appendParam(\x22_s\x22, url.toString().match(/.+\\?(.*)/)[1].length.toString(16));\n          BrightTag.Content.image(url);\n        })();\n      \x3c/script\x3e',{tagId:107521173});
+s.secondary(function(c){
+c.when('!!bt_data(\x27yj_member_id\x27)').fire(5927392).appendData('yj_member_id');
+c.when('!!bt_data(\x27yj_member_id\x27)').fire(5927383);
+});
+});
+});
+});

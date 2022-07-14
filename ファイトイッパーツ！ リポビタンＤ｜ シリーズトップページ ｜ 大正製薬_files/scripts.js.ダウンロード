@@ -1,0 +1,78 @@
+//----------------------------------------------------------
+// UA判定
+//----------------------------------------------------------
+var ua = navigator.userAgent.toLowerCase();
+var isiPhone = (ua.indexOf("iphone") != -1);
+var isiPod = (ua.indexOf("ipod") != -1);
+var isiPad = (ua.indexOf("ipad") != -1);
+//var isiOS = (isiPhone || isiPad || isiPod);
+
+var isAndroid = (ua.indexOf("android") != -1);
+//var isAndroidMobile = (isAndroid && ua.indexOf("mobile") != -1);
+//var ie6 = (ua.indexOf("msie 6.") != -1);
+//var ie7 = (ua.indexOf("msie 7.") != -1);
+//var ie8 = (ua.indexOf("msie 8.") != -1);
+//var ie9 = (ua.indexOf("msie 9.") != -1);
+//var ie10 = (ua.indexOf("msie 10.") != -1);
+var isTouchDevice = (isiPhone||isiPod||isiPad||isAndroid);
+
+
+//----------------------------------------------------------
+// リポビタンシリーズTOP
+//----------------------------------------------------------
+//ブランドサイト クリック設定
+function brandClick() {
+	var $brandList = $('.brandSiteBox ul li');
+	var i = 0;
+	$brandList.each(function() {
+		var linkUrl = $(this).find('a').attr('href');
+		$(this).wrapInner('<a href="' + linkUrl + '" class="touchArea"></a>');
+		i++;
+	});
+}
+
+//実行
+var topslider;
+$(document).ready(function(){
+    $('.scroll_area').jScrollPane();
+	
+	//スライダー
+	topslider = $('#topslider').bxSlider({
+		captions: true,
+		auto: true,
+		pause: 5000,
+		autoStart: true,
+		onSlideAfter: function() { topslider.startAuto(); }
+	});
+		
+	//ブランドサイト クリック
+	brandClick();
+});
+$(window).on('load', function(){
+	var slideCount = topslider.getSlideCount();
+	if(slideCount < 2) {
+		topslider.reloadSlider({
+			captions: true,
+			auto: false,
+			autoStart: false
+		});
+		$('.bx-controls').hide();
+	}
+});
+$(window).resize(function(){
+	$('.scroll_area').jScrollPane();
+});
+
+// Share button
+$(function () {
+  "use strict";
+  var shareTitle = encodeURI($('title').html());
+  var shareUrl = encodeURI(document.URL);
+  $('.facebook a').attr("href", "https://www.facebook.com/sharer.php?u=" + shareUrl + "&t=" + shareTitle);
+  $('.twitter a').attr("href", "https://twitter.com/share?url=" + shareUrl + "&text=" + shareTitle);
+  $('.line a').attr("href", "https://line.me/R/msg/text/?" + shareTitle + shareUrl);
+  $('.sns a').click(function () {
+    window.open(this.href, "social_window", "width=600,height=600,resizable=yes,scrollbars=yes,toolbar=yes");
+    return false;
+  });
+});
