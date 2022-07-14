@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*================================================
+* Reset Style
+================================================*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	border: 0;
+	border-style: none;
+}
+ol,
+ul {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+q:before,
+q:after {
+	content: '';
+}
+a:focus,a:hover {
+	border: none;
+}
+address, caption, em, var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+caption, th {
+	text-align: left;
+}
+/* Clear Fix - floatの親要素に設定し、floatを解除 */
+.cf {
+	zoom: 1;
+}
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*================================================
+* Base Style
+================================================*/
+body {
+	color: #333;
+	font-size: 75%;
+	font-family: 'ヒラギノ角ゴ Pro W3','メイリオ','Meiryo','ＭＳ Ｐゴシック','Osaka',sans-serif;
+	-webkit-text-size-adjust: 100%;
+}
+p,li,dt,dd {
+	line-height: 1.6;
+}
+.bold {
+	font-weight: bold;
+}
+.comment {
+	text-indent: -1em;
+	padding-left: 1em;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.touchArea {
+	display: block;
+}
+.touchArea:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+@font-face {
+	font-family: 'iconfonts';
+	src:url('../../fonts/iconfonts.eot?sbcn4s');
+	src:url('../../fonts/iconfonts.eot?#iefixsbcn4s') format('embedded-opentype'),
+		url('../../fonts/iconfonts.woff?sbcn4s') format('woff'),
+		url('../../fonts/iconfonts.ttf?sbcn4s') format('truetype'),
+		url('../../fonts/iconfonts.svg?sbcn4s#iconfonts') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'iconfonts';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/*================================================
+* Layout Style
+================================================*/
+#container {
+	width: 1024px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+/*================================================
+* Tablet Style
+================================================*/
+@media screen and (max-width: 1023px) {
+p,li,dt,dd {
+	line-height: 1.5;
+}
+#container {
+	width: auto;
+}
+}

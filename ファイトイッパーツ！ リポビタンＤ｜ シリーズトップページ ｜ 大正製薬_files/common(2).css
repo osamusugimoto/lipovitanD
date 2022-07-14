@@ -1,0 +1,657 @@
+@charset "UTF-8";
+/* リポビタンシリーズ
+--------------------------------------------------------- */
+.lipo_top_cms .tsukare-column-box {
+  margin: 0 0 20px;
+}
+.lipo_top_cms .tsukare-column-box__ttl {
+  position: relative;
+  margin: 25px 0 10px; 
+  text-align: center;
+}
+.lipo_top_cms .tsukare-column-box__ttl::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ccc; 
+  content: "";
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.lipo_top_cms .tsukare-column-box__ttl span {
+  position: relative;
+  z-index: 2; 
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #fff;
+  color: #008ddc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 116.7%;
+}
+.lipo_top_cms .tsukare-column-box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px; 
+
+  -ms-flex-wrap: wrap; 
+
+      flex-wrap: wrap;
+}
+.lipo_top_cms .tsukare-column-box ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px; 
+  width: calc(50% - 2.5px);
+
+  -ms-flex-item-align: stretch;
+
+      align-self: stretch;
+}
+.lipo_top_cms .tsukare-column-box ul li:nth-child(n + 7) {
+  display: none;
+}
+.lipo_top_cms .tsukare-column-box ul li:nth-child(odd) {
+  margin: 0 5px 10px 0;
+}
+.lipo_top_cms .tsukare-column-box ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  border: 1px solid #d1e4eb; 
+  text-decoration: none;
+  line-height: 0;
+}
+.lipo_top_cms .tsukare-column-box ul li a span {
+  position: absolute;
+  top: 15.46667vw;
+  left: 2vw;
+  display: block;
+  padding: 9px 0;
+  width: 45px;
+  border-radius: 20px; 
+  background-color: #fc697c;
+  color: #fff;
+  text-align: center;
+  font-size: 80%;
+}
+.lipo_top_cms .tsukare-column-box ul li p {
+  padding: 10px; 
+  color: #666;
+}
+.lipo_top_cms .tsukare-column-box img {
+  max-width: 100%;
+}
+.lipo_top_cms .tsukare-column-box .more-column-link {
+  display: block;
+  margin: 6px auto 0;
+  padding: 8px 0;
+  width: 171px;
+  background: #eff4f7;
+  color: #008ddc;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* リポビタンD
+--------------------------------------------------------- */
+.lipod-wrap .topic-area {
+  padding: 5px 5px 0;
+}
+
+.lipod-wrap .topic-lst li {
+  margin-bottom: 5px;
+}
+
+.lipo_d_cms .campaign-bnr-box {
+  padding: 0 5px 20px;
+}
+.lipo_d_cms .campaign-bnr-box__ttl {
+  display: none;
+}
+.lipo_d_cms .campaign-bnr-box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
+}
+.lipo_d_cms .campaign-bnr-box ul li {
+  margin: 0 0 5px; 
+  width: calc(50% - 2.5px);
+}
+.lipo_d_cms .campaign-bnr-box ul li:nth-child(odd) {
+  margin: 0 5px 5px 0;
+}
+.lipo_d_cms .campaign-bnr-box ul li a {
+  display: block;
+  line-height: 0;
+}
+.lipo_d_cms .campaign-bnr-box ul li.have2 {
+  display: none;
+}
+
+/* リポビタンDキッズ
+--------------------------------------------------------- */
+.lipo_d_kids_cms .campaign-bnr-box {
+  padding: 0 10px 12px; 
+  border-bottom: 1px solid #f1f8fe;
+}
+.lipo_d_kids_cms .campaign-bnr-box__ttl {
+  position: relative;
+  margin: 15px 0 13px;
+  text-align: center;
+}
+.lipo_d_kids_cms .campaign-bnr-box__ttl::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #1569af; 
+  content: "";
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.lipo_d_kids_cms .campaign-bnr-box__ttl span {
+  position: relative;
+  z-index: 2; 
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 5px;
+  background-color: #fff;
+  color: #1569af;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.lipo_d_kids_cms .campaign-bnr-box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
+}
+.lipo_d_kids_cms .campaign-bnr-box ul li {
+  margin: 0 0 10px; 
+  width: calc(50% - 5px);
+}
+.lipo_d_kids_cms .campaign-bnr-box ul li:nth-child(odd) {
+  margin: 0 10px 10px 0;
+}
+.lipo_d_kids_cms .campaign-bnr-box ul li a {
+  display: block;
+  line-height: 0;
+}
+.lipo_d_kids_cms .campaign-bnr-box ul li.have2 {
+  display: none;
+}
+
+/* アルコベール
+--------------------------------------------------------- */
+.lipo_alco_cms .campaign-bnr-box {
+  padding: 0 5.06667vw 10.66667vw;
+}
+.lipo_alco_cms .campaign-bnr-box__ttl {
+  display: none;
+}
+.lipo_alco_cms .campaign-bnr-box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
+}
+.lipo_alco_cms .campaign-bnr-box ul li {
+  margin: 0 0 1.33333vw; 
+  width: calc(50% - 0.66667vw);
+}
+.lipo_alco_cms .campaign-bnr-box ul li:nth-child(odd) {
+  margin: 0 1.2vw 1.33333vw 0;
+}
+.lipo_alco_cms .campaign-bnr-box ul li a {
+  display: block;
+  line-height: 0;
+}
+.lipo_alco_cms .campaign-bnr-box ul li.have2 {
+  display: none;
+}
+
+/* リポビタンfeel
+--------------------------------------------------------- */
+.lipo_feel_cms .slider-cms-box {
+  overflow: hidden; 
+  margin: 20px 0;
+  padding: 0 10.5%;
+}
+
+.lipo_feel_cms .slider img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #89498b;
+}
+
+.lipo_feel_cms .slick-slide {
+  padding: 0 10px;
+}
+
+.lipo_feel_cms .slide-arrow {
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  cursor: pointer; 
+  -webkit-transform: translateY(-50%); 
+          transform: translateY(-50%);
+}
+
+.lipo_feel_cms .prev-arrow {
+  left: -18px;
+  background-image: url(/feel/img/sp_prev.png);
+}
+
+.lipo_feel_cms .next-arrow {
+  right: -18px;
+  background-image: url(/feel/img/sp_next.png);
+}
+
+/* リポビタンfine
+--------------------------------------------------------- */
+.lipo_fine_cms .slider-cms-box {
+  position: relative;
+  overflow: hidden; 
+  padding: 0 15%;
+}
+
+.lipo_fine_cms .slider img {
+  width: 100%;
+  height: auto;
+}
+
+.lipo_fine_cms .slick-slider {
+  position: static;
+}
+
+.lipo_fine_cms .slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 35px;
+  height: 35px;
+  background-color: #fe347b;
+  cursor: pointer; 
+  -webkit-transform: translateY(-50%); 
+          transform: translateY(-50%);
+}
+.lipo_fine_cms .slide-arrow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff; 
+  content: "";
+}
+
+.lipo_fine_cms .prev-arrow {
+  left: 10px;
+}
+.lipo_fine_cms .prev-arrow::before {
+  -webkit-transform: translate(-50%, -50%) rotate(225deg);
+          transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.lipo_fine_cms .next-arrow {
+  right: 10px;
+}
+.lipo_fine_cms .next-arrow::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.lipo_fine_cms .slick-dots {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.lipo_fine_cms .slick-dots li {
+  margin: 0 5px; 
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.lipo_fine_cms .slick-dots li.slick-active {
+  background-color: #fe377a;
+}
+.lipo_fine_cms .slick-dots li:hover {
+  background-color: #fe377a;
+}
+.lipo_fine_cms .slick-dots li button {
+  display: none;
+}
+.lipo_fine_cms .slick-dots li button::before {
+  content: none;
+}
+@media screen and (min-width: 599px) {
+  .lipo_top_cms .tsukare-column-box {
+    margin: 0 0 38px;
+  }
+  .lipo_top_cms .tsukare-column-box__ttl {
+    margin: 44px 0 20px;
+  }
+  .lipo_top_cms .tsukare-column-box__ttl span {
+    font-size: 133.3%;
+  }
+  .lipo_top_cms .tsukare-column-box ul {
+    padding: 0;
+  }
+  .lipo_top_cms .tsukare-column-box ul li {
+    margin: 0 0 16px; 
+    width: calc(25% - 12px);
+  }
+  .lipo_top_cms .tsukare-column-box ul li:nth-child(n + 7) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .lipo_top_cms .tsukare-column-box ul li:nth-child(n + 9) {
+    display: none;
+  }
+  .lipo_top_cms .tsukare-column-box ul li:nth-child(odd) {
+    margin: 0 0 16px 0;
+  }
+  .lipo_top_cms .tsukare-column-box ul li:not(:nth-child(4n)) {
+    margin: 0 16px 16px 0;
+  }
+  .lipo_top_cms .tsukare-column-box ul li a span {
+    top: 6.14934vw;
+    left: .73206vw;
+    padding: 9px 0;
+    width: 42px;
+    border-radius: 21px;
+  }
+  .lipo_top_cms .tsukare-column-box ul li p {
+    font-size: 116.7%;
+  }
+  .lipo_top_cms .tsukare-column-box .more-column-link {
+    margin: 16px auto 0;
+    padding: 11px 0; 
+    width: 200px;
+    background: #eff4f7;
+  }
+  .lipo_top_cms .campaign-bnr-box {
+    margin: 0 0 38px;
+  }
+  .lipo_top_cms .campaign-bnr-box__ttl {
+    position: relative;
+    margin: 44px 0 20px;
+    text-align: center;
+  }
+  .lipo_top_cms .campaign-bnr-box__ttl::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc; 
+    content: "";
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .lipo_top_cms .campaign-bnr-box__ttl span {
+    position: relative;
+    z-index: 2; 
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #fff;
+    color: #008ddc;
+    text-align: center;
+    font-weight: bold;
+    font-size: 133.3%;
+  }
+  .lipo_top_cms .campaign-bnr-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 24px; 
+    background: url(/lipovitan/images/bg_campaign.png);
+
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
+  }
+  .lipo_top_cms .campaign-bnr-box ul li {
+    display: block !important;
+    margin: 0 0 10px; 
+    width: calc(25% - 6px);
+  }
+  .lipo_top_cms .campaign-bnr-box ul li:nth-of-type(odd) {
+    margin: 0 0 10px;
+  }
+  .lipo_top_cms .campaign-bnr-box ul li:not(:nth-of-type(4n)) {
+    margin: 0 8px 10px 0;
+  }
+  .lipo_top_cms .campaign-bnr-box ul li a {
+    display: block;
+    line-height: 0;
+  }
+  .lipo_top_cms .campaign-bnr-box ul li.have2 {
+    display: block !important;
+  }
+  .lipo_top_cms .campaign-bnr-box img {
+    max-width: 100%;
+  }
+  .lipo_top_cms .campaign-bnr-box .morelink {
+    display: none !important;
+  }
+  .lipod-wrap .topic-lst {
+    padding-top: 44.7643%;
+  }
+  .lipod-wrap .topic-lst li:nth-child(4) {
+    top: 66.95%;
+  }
+  .lipod-wrap .topic-lst li:nth-child(5) {
+    top: 66.95%;
+  }
+  .lipod-wrap .topic-lst li:nth-child(6) {
+    top: 33.5%;
+  }
+  .lipo_d_cms .campaign-bnr-box {
+    padding: 5px 5px 30px;
+  }
+  .lipo_d_cms .campaign-bnr-box ul li {
+    margin: 0 0 5px; 
+    width: calc(25% - 3.75px);
+  }
+  .lipo_d_cms .campaign-bnr-box ul li:nth-child(odd) {
+    margin: 0 0 5px;
+  }
+  .lipo_d_cms .campaign-bnr-box ul li:not(:nth-child(4n)) {
+    margin: 0 5px 5px 0;
+  }
+  .lipo_d_cms .campaign-bnr-box ul li.have2 {
+    display: block;
+  }
+}
+@media print, screen and (min-width: 640px) {
+  .lipo_feel_cms .slide-arrow {
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+  }
+  .lipo_feel_cms .prev-arrow {
+    left: -43px;
+    background-image: url(/feel/img/sp_prev.png);
+  }
+  .lipo_feel_cms .next-arrow {
+    right: -43px;
+    background-image: url(/feel/img/sp_next.png);
+  }
+  .lipo_fine_cms .slider-cms-box {
+    padding: 0 84px;
+  }
+  .lipo_fine_cms .slick-slide {
+    padding: 0 16px;
+  }
+  .lipo_fine_cms .slick-slide:hover {
+    opacity: .7;
+  }
+  .lipo_fine_cms .slide-arrow {
+    margin-top: 0; 
+    width: 50px;
+    height: 50px;
+  }
+  .lipo_fine_cms .slide-arrow:hover {
+    opacity: .7;
+  }
+  .lipo_fine_cms .prev-arrow {
+    left: 0;
+  }
+  .lipo_fine_cms .next-arrow {
+    right: 0;
+  }
+}
+@media screen and (min-width: 780px) {
+  .lipo_d_kids_cms .campaign-bnr-box {
+    margin: 0 auto;
+    padding: 0; 
+    min-width: 968px;
+    max-width: 968px;
+    border-bottom: none;
+  }
+  .lipo_d_kids_cms .campaign-bnr-box__ttl {
+    margin: 44px 0 20px;
+  }
+  .lipo_d_kids_cms .campaign-bnr-box__ttl span {
+    padding: 0 10px;
+  }
+  .lipo_d_kids_cms .campaign-bnr-box ul li {
+    width: calc(25% - 3.75px);
+  }
+  .lipo_d_kids_cms .campaign-bnr-box ul li:nth-child(odd) {
+    margin: 0;
+  }
+  .lipo_d_kids_cms .campaign-bnr-box ul li:not(:nth-child(4n)) {
+    margin: 0 5px 10px 0;
+  }
+  .lipo_d_kids_cms .campaign-bnr-box ul li.have2 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .lipo_top_cms .tsukare-column-box ul li a span {
+    top: 84px;
+    left: 10px;
+  }
+  .lipo_alco_cms .campaign-bnr-box {
+    margin: 0 auto;
+    padding: 0; 
+    max-width: 1024px;
+  }
+  .lipo_alco_cms .campaign-bnr-box ul li {
+    margin: 0 0 14px; 
+    width: calc(33.33333% - 9.33333px);
+  }
+  .lipo_alco_cms .campaign-bnr-box ul li:nth-child(odd) {
+    margin: 0 0 14px;
+  }
+  .lipo_alco_cms .campaign-bnr-box ul li:not(:nth-child(3n)) {
+    margin: 0 14px 14px 0;
+  }
+  .lipo_alco_cms .campaign-bnr-box ul li.have2 {
+    display: block;
+  }
+  .lipo_alco_cms .campaign-bnr-box ul li.have3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 598px) {
+  .lipo_top_cms .campaign-bnr-box {
+    margin: 0 0 20px;
+  }
+  .lipo_top_cms .campaign-bnr-box__ttl {
+    position: relative;
+    margin: 25px 0 10px; 
+    text-align: center;
+  }
+  .lipo_top_cms .campaign-bnr-box__ttl::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc; 
+    content: "";
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .lipo_top_cms .campaign-bnr-box__ttl span {
+    position: relative;
+    z-index: 2; 
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #fff;
+    color: #008ddc;
+    text-align: center;
+    font-weight: bold;
+    font-size: 116.7%;
+  }
+  .lipo_top_cms .campaign-bnr-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px; 
+
+    -ms-flex-wrap: wrap; 
+
+        flex-wrap: wrap;
+  }
+  .lipo_top_cms .campaign-bnr-box ul li {
+    margin: 0 0 10px; 
+    width: calc(50% - 5px);
+  }
+  .lipo_top_cms .campaign-bnr-box ul li:nth-of-type(odd) {
+    margin: 0 10px 10px 0;
+  }
+  .lipo_top_cms .campaign-bnr-box ul li a {
+    display: block;
+    line-height: 0;
+  }
+  .lipo_top_cms .campaign-bnr-box ul li.have2 {
+    display: none !important;
+  }
+  .lipo_top_cms .campaign-bnr-box img {
+    max-width: 100%;
+  }
+  .lipo_top_cms .campaign-bnr-box .morelink {
+    display: block;
+    margin: 6px auto 0;
+    padding: 8px 0;
+    width: 171px;
+    background: #eff4f7;
+    color: #008ddc;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

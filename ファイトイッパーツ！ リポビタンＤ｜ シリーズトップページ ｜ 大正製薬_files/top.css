@@ -1,0 +1,723 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------------
+PC Style
+-------------------------------------------------------------------*/
+.sp-view {
+  display: none;
+}
+#wrapper {
+  background: url(../images/bg_sky.jpg) center top no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+}
+/*brandTop_head*/
+.brandTop_head {
+  padding-top: 13px;
+  margin-bottom: 10px;
+}
+.brandTop_head h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+.brandTop_head h1 img {
+  width: 170px;
+  height: auto;
+  margin-bottom: 7px;
+}
+.brandTop_head p {
+  font-size: 10px;
+  line-height: 1;
+  text-align: center;
+}
+/*cpSlider*/
+#cpSlider {
+  min-height: 290px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+#cpSlider ul li {
+  position: relative;
+  margin: 0 auto;
+  line-height: 1;
+}
+#cpSlider ul li a{
+  position: relative;
+  display: block;
+}
+#cpSlider ul li a::before{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+}
+#cpSlider ul li img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  pointer-events: none;
+}
+#topslider li {
+  width: 100%;
+  min-width: 1px;
+  height: auto;
+  min-height: 1px;
+  overflow: hidden;
+}
+/*brandSite*/
+.brandSite a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.brandSite a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.brandSite a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.brandSite a:active {
+  color: #fff;
+  text-decoration: none;
+}
+.brandSite a:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  zoom: 1;
+}
+.brandSite h2 {
+  position: relative;
+}
+.brandSite h2 span {
+  position: relative;
+  display: block;
+  width: 210px;
+  background-color: #fff;
+  padding: 10px 10px;
+  margin: 0 auto;
+  color: #008ddc;
+  font-weight: bold;
+  font-size: 133.3%;
+  text-align: center;
+  z-index: 2;
+}
+.brandSite h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.brandSiteBox ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  align-items: center;
+  margin-left: -.7%;
+  margin-right: -.7%;
+}
+.brandSiteBox ul li {
+  width: 48.6%;
+  margin-left: .7%;
+  margin-right: .7%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.brandSiteBox li a{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+.brandSiteBox ul li .brandimg {
+  width: 48%;
+  line-height: 0;
+}
+.brandSiteBox ul li .brandimg img {
+  width: 100%;
+  height: auto;
+}
+.brandtext {
+  width: 48%;
+  padding: 1.9%;
+  color: #fff;
+  position: relative;
+}
+.brandtext .brandName {
+  font-weight: bold;
+  font-size: 150.0%;
+  padding-bottom: 7px;
+}
+.brandtext p {
+  font-size: 100%;
+  line-height: 1.4;
+  padding-bottom:5px;
+  height: 2.8em;
+}
+.brandtext .brandcls{
+  line-height: 0;
+  position: absolute;
+  right: 1.9%;
+  bottom: 30px;
+  width: 98.1%;
+  display: block;
+  text-align: right;
+}
+.brandtext .brandcls img{
+  width:23.112%;
+  max-width: 56px;
+  height: auto;
+  margin-left:7px;
+}
+.brandtext .arrow {
+  display: block;
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+.brandtext .arrow:before {
+  content: "\e602";
+  position: relative;
+  top: .1em;
+  margin-right: 5px;
+  color: #fff;
+  font-family: 'iconfonts';
+  font-size: 14px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.brandtext a:hover {
+  opacity: .7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+/*リポD*/
+#brandLipod {
+  background-color: #1d0ad4;
+}
+/*ファイン*/
+#brandFine {
+  background-color: #fe377a;
+}
+/*フィール*/
+#brandFeel {
+  background-color: #5b2f8f;
+}
+/*シリーズ*/
+#brandseries {
+  background-color: #2000a8;
+}
+/* ZERO */
+#brandZero {
+  background-color: #00b0f0;
+}
+/* キッズ */
+#brandKids,#branddx {
+  background-color: #0097e0;
+}
+/* アルコベール */
+#brandAlco {
+  background-color: #007e41;
+}
+/* リポビタンJELLY */
+#brandlipovitanjelly {
+  background-color:#44A8F5;
+}
+#brandlipovitanshot {
+  background-color:#bc000b;
+}
+/*campaignBox*/
+.campaign h2 {
+  position: relative;
+}
+.campaign h2 span {
+  position: relative;
+  display: block;
+  width: 130px;
+  background-color: #fff;
+  padding: 10px 10px;
+  margin: 0 auto;
+  color: #008ddc;
+  font-weight: bold;
+  font-size: 133.3%;
+  text-align: center;
+  z-index: 2;
+}
+.campaign h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.campaignBox {
+  margin-bottom: 15px;
+  padding: 20px;
+  background: url(../images/bg_campaign.png);
+}
+.campaignBox ul {
+  width: 100%;
+  font-size: 0;
+  background: url(../images/bg_banner_campaign.png) top left repeat-y;
+}
+.campaignBox li {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 246px;
+  padding: 4px;
+  font-size: 12px;
+}
+.campaignBox li img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+/*WHAT’S NEW*/
+.whatsNew {
+  margin-bottom: 30px;
+}
+.whatsNew h2 {
+  position: relative;
+  margin-bottom: 15px;
+}
+.whatsNew h2 span img {
+  position: relative;
+  display: block;
+  width: 240px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+.whatsNew h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.scroll_area {
+  width: 100%;
+  height: 265px;
+  overflow: auto;
+}
+.scroll_area dl {
+  font-size: 116.7%;
+}
+.scroll_area dt {
+  display: inline-block;
+  float: left;
+  padding: 15px;
+}
+.scroll_area dd {
+  padding: 15px 15px 15px 220px;
+  border-bottom: 1px dotted #ccc;
+}
+.scroll_area dd:first-child {
+  border-top: 1px dotted #ccc;
+}
+.scroll_area dt span {
+  display: inline-block;
+  width: 88px;
+  text-align: center;
+  font-size: 83.3%;
+  margin-left: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.icon_campaign {
+  background-color: #fae927;
+  color: #e70012;
+}
+.icon_cm {
+  background-color: #008ddc;
+  color: #fff;
+}
+.icon_event {
+  background-color: #ff9023;
+  color: #fff;
+}
+.icon_brand {
+  background-color: #e70012;
+  color: #fff;
+}
+/* sns */
+.sns {
+  width: 272px;
+  margin: 0 auto 30px;
+}
+.sns li {
+  float: left;
+  margin: 0px 10px;
+}
+.sns li img {
+  width: 48px;
+  height: 48px;
+  vertical-align: bottom;
+}
+.sns a:hover {
+  opacity: .7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+.notice{
+  margin: 25px 15px 10px;
+}
+/*-------------------------------------------------------------------
+Tablet Style
+-------------------------------------------------------------------*/
+@media screen and (max-width: 1023px) {
+.sp-view {
+  display: none;
+}
+/*brandTop_head*/
+.brandTop_head {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.brandTop_head h1 img {
+  width: 134px;
+  height: auto;
+  margin-bottom: 5px;
+}
+#cpSlider {
+  min-height: 91px;
+}
+/*brandSite*/
+.brandSite h2 span {
+  width: 170px;
+  padding: 5px 5px;
+  font-size: 116.7%;
+}
+.brandSite h2:before {
+  top: 18px;
+}
+.brandtext .brandName {
+  font-size: 100%;
+  padding-bottom: 7px;
+}
+.brandtext p {
+  font-size: 91.7%;
+  line-height: 1.4;
+  padding-bottom: 15px;
+}
+.brandtext .arrow {
+  font-size: 83.3%;
+  white-space: nowrap;
+}
+.brandtext .arrow:before {
+  content: "\e602";
+  position: relative;
+  top: .1em;
+  margin-right: 5px;
+  color: #fff;
+  font-family: 'iconfonts';
+  font-size: 12px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*campaignBox*/
+.campaign h2 span {
+  padding: 5px 5px;
+  font-size: 116.7%;
+}
+.campaign h2:before {
+  top: 16px;
+}
+.campaignBox {
+  margin-bottom: 20px;
+  background: url(../images/bg_campaign.png);
+  font-size: 0;
+}
+.campaignBox ul {
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.campaignBox li {
+  width: 25%;
+  padding: .5%;
+}
+#topslider li {
+  width: 100%;
+  min-width: 1px;
+  height: auto;
+  min-height: 1px;
+  overflow: hidden;
+}
+/*WHAT’S NEW*/
+.whatsNew h2 {
+  margin-bottom: 10px;
+}
+.whatsNew h2 span img {
+  position: relative;
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+.whatsNew h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.scroll_area dl {
+  font-size: 116.7%;
+}
+.scroll_area dt {
+  padding: 15px 10px;
+}
+.scroll_area dd {
+  padding: 15px 10px 15px 180px;
+}
+.scroll_area dt span {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-size: 75.0%;
+  margin-left: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* sns */
+.sns {
+  width: 150px;
+  margin: 0 auto 30px;
+}
+.sns li {
+  float: left;
+  margin: 0px 5px;
+}
+.sns li img {
+  width: 40px;
+  height: 40px;
+  vertical-align: bottom;
+}
+}
+
+/*-------------------------------------------------------------------
+Smartphone Style
+-------------------------------------------------------------------*/
+@media screen and (max-width: 599px) {
+.sp-view {
+  display: block!important;
+}
+/*brandTop_head*/
+.brandTop_head {
+  padding-top: 8px;
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+.brandTop_head h1 img {
+  width: 98px;
+  height: auto;
+  margin-bottom: 3px;
+}
+.brandTop_head p {
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.brandtext .brandName {
+  font-size: 100%;
+  padding-bottom: 0;
+}
+.brandtext p {
+  font-size:9px;
+  line-height: 1.4;
+  padding-bottom:3px;
+}
+.brandtext .brandcls {
+  bottom: 25px;
+}
+.brandtext .brandcls img{
+  width: 37px;
+}
+#brandAlco .brandcls{
+  bottom: 36px;
+}
+.brandtext .arrow {
+  right: 4px;
+  bottom: 4px;
+  font-size: 75.0%;
+  white-space: nowrap;
+}
+.brandtext a:before {
+  content: "\e602";
+  position: relative;
+  top: .1em;
+  margin-right: 3px;
+  color: #fff;
+  font-family: 'iconfonts';
+  font-size: 10px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+  .brandSiteBox ul{
+    display: block;
+    margin: 0;
+  }
+  .brandSiteBox ul li{
+    margin: 0;
+    width: 100%;
+  }
+/*campaignBox*/
+.campaign h2 span {
+  padding: 10px 5px 5px;
+  font-size: 116.7%;
+}
+.campaign h2:before {
+  top: 22px;
+}
+.campaignBox {
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  background: url(../images/bg_campaign.png);
+  font-size: 0;
+  text-align: center;
+}
+.campaignBox ul {
+  background: none;
+}
+.campaignBox li {
+  display: inline-block;
+  width: 238px;
+  margin: 5px;
+  font-size: 12px;
+}
+/*WHAT’S NEW*/
+.whatsNew h2 {
+  margin-bottom: 0;
+}
+.whatsNew h2 span img {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+.whatsNew h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.scroll_area dl {
+  font-size: 100%;
+}
+.scroll_area dt {
+  float: none;
+  padding: 10px 10px 3px;
+}
+.scroll_area dd {
+  padding: 0 10px 10px;
+}
+.scroll_area dt span {
+  display: inline-block;
+  width: 75px;
+  text-align: center;
+  font-size: 83.3%;
+  margin-left: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+}
+@media screen and (min-width: 600px) {
+  .notice{
+    width: 60%;
+    margin: 40px auto 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+.brandimg {
+  display: block;
+  width: 48%;
+  float: left;
+}
+.brandimg {
+  float: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.brandtext .arrow {
+  display: block;
+  font-size: 9px;
+}
+.brandName {
+  padding: 0!important;
+}
+  .brandSiteBox p{
+    height: 2.6em;
+    font-size: 9px;
+    padding-bottom: 0;
+    margin-bottom: 4%;
+    overflow: hidden;
+  }
+  .brandSiteBox .arrow{
+    bottom: 1.9%;
+  }
+  .brandSiteBox .brandcls{
+    margin-top:0;
+  }
+  .brandSiteBox .brandcls img{
+    margin-left:2.8%;
+  }
+}
+
+@media print{
+  #cpSlider img,
+  .lipo_top_cms .campaign-bnr-box img{
+    display: none !important;
+  }
+}
